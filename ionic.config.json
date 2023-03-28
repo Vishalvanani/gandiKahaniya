@@ -1,0 +1,7 @@
+{
+  "name": "gandiKahaniya",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
