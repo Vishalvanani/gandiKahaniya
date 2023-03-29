@@ -1,0 +1,33 @@
+<ion-content [fullscreen]="true" class="main-content">
+  <!-- #661313 -->
+  <ion-card  class="main-card"> 
+    <ion-card-header>
+      <ion-card-title class="cardTitle ">नमस्ते</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content class="card2">
+      ओर्गास्म महिलाओं को अधिक रचनात्मक बना सकता है
+    </ion-card-content>
+  </ion-card>
+
+    <ion-row class="margin_t_15" *ngFor="let x of [1,2,3,4,5]">
+      <ion-col size="1" class="bgWhite vertical_centr index">{{x}}</ion-col>
+      <ion-col size="10" class="bgWhite ion-no-padding">
+        <ion-row>
+          <ion-col size="12" class="ion-no-padding" style="
+          background-image: linear-gradient(to right, #fff 58%, transparent 80%), url(../../../assets/img/1.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%, cover;
+          background-position: center;
+          ">
+          <div style="padding: 10px 0px;width: 75%;">
+            <div class="storyTitle">Title Lorem Ipsum</div>
+            <div class="storyPreview">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+          </div>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col size="1" class="vertical_centrC"><ion-icon name="chevron-forward-circle" class="arrowIcon"></ion-icon></ion-col>
+    </ion-row>
+
+</ion-content>
