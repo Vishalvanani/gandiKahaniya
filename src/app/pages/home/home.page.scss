@@ -56,9 +56,13 @@
   background-color: #fff;
 }
 .storyTitle{
-  font-size: 22px;
-  font-weight: 500;
-  color: #4d1515;
+  font-size: 20px;
+    font-weight: 500;
+    color: #4d1515;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .storyPreview{
   line-height: 1.4em;
@@ -73,7 +77,7 @@
   color: #935c5c;
 }
 .index{
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 500;
   color: #4d1515;
 }
