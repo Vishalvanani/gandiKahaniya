@@ -1,6 +1,6 @@
 <ion-content [fullscreen]="true" class="main-content">
   <!-- #661313 -->
-  <ion-card  class="main-card"> 
+  <ion-card class="main-card"> 
     <ion-card-header>
       <ion-card-title class="cardTitle ">नमस्ते</ion-card-title>
     </ion-card-header>
@@ -10,12 +10,12 @@
     </ion-card-content>
   </ion-card>
 
-    <ion-row class="margin_t_15" *ngFor="let x of stories" (click)="openStory(x)">
+    <ion-row class="margin_t_15" *ngFor="let x of storyList" (click)="openStory(x)">
       <ion-col size="1" class="bgWhite vertical_centr index">{{x.id}}</ion-col>
       <ion-col size="10" class="bgWhite ion-no-padding">
         <ion-row>
           <ion-col size="12" class="ion-no-padding" style="
-          background-image: linear-gradient(to right, #fff 58%, transparent 80%), url(../../../assets/img/2.jpg);
+          background-image: linear-gradient(to right, #fff 58%, transparent 80%), url(../../../assets/icon/2.jpg);
           background-repeat: no-repeat;
           background-size: 100% 100%, cover;
           background-position: center;
