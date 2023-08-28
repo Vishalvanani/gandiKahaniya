@@ -43,4 +43,32 @@ export class CommonService {
   }
 
   alert: any;
+  presentAlert(msg: any, title?: any, buttons?: any, cssClass?: any) {
+    return new Promise(async (resolve, reject) => {
+      this.alert = await this.alertCtrl.create({
+        header: title ? title : 'Alert',
+        message: msg,
+        backdropDismiss: false,
+        buttons: buttons
+          ? buttons
+          : [
+              {
+                text: 'Cancel',
+                role: 'cancel',
+                handler: () => {
+                  resolve('');
+                },
+              },
+            ],
+      });
+      this.alert.present();
+      return alert;
+    });
+  }
+
+  dismissAlert() {
+    if (this.alert) {
+      this.alert.dismiss();
+    }
+  }
 }

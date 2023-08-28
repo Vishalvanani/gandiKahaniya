@@ -6,23 +6,18 @@
     </ion-card-header>
   
     <ion-card-content class="card2">
-      ओर्गास्म महिलाओं को अधिक रचनात्मक बना सकता है
+      {{welcomeMsg}}
     </ion-card-content>
   </ion-card>
 
-    <ion-row class="margin_t_15" *ngFor="let x of storyList" (click)="openStory(x)">
-      <ion-col size="1" class="bgWhite vertical_centr index">{{x.id}}</ion-col>
+    <ion-row class="margin_t_15" *ngFor="let x of storyList;let i = index" (click)="openStory(x)">
+      <ion-col size="1" class="bgWhite vertical_centr index">{{i + 1}}</ion-col>
       <ion-col size="10" class="bgWhite ion-no-padding">
         <ion-row>
-          <ion-col size="12" class="ion-no-padding" style="
-          background-image: linear-gradient(to right, #fff 58%, transparent 80%), url(../../../assets/icon/2.jpg);
-          background-repeat: no-repeat;
-          background-size: 100% 100%, cover;
-          background-position: center;
-          ">
+          <ion-col size="12" class="ion-no-padding story-card">
           <div style="padding: 10px 0px;width: 75%;">
             <div class="storyTitle">{{x.title}}</div>
-            <div class="storyPreview">{{ x.story }}</div>
+            <div class="storyPreview" [innerHTML]="x.story"></div>
           </div>
           </ion-col>
         </ion-row>

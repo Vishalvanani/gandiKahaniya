@@ -1,11 +1,11 @@
 .main-content {
-  --background: url(../../../assets/img/bg.jpg) no-repeat center
-  center / cover;
+  --background: url(../../../assets/img/bg.jpg) no-repeat center center / cover;
 }
 
 .main-card {
-  --background: url(../../../assets/img/pattern.png) no-repeat center center / cover;
-  background: rgba(102, 19, 19, .8);
+  --background: url(../../../assets/img/pattern.png) no-repeat center center /
+    cover;
+  background: rgba(102, 19, 19, 0.8);
   color: #fff;
   border-radius: 10px;
   padding: 20px;
@@ -39,31 +39,31 @@
   text-decoration: none;
 }
 
-.cardTitle{
+.cardTitle {
   color: #fff;
   text-align: center;
   font-weight: bolder;
   font-size: 28px;
 }
-.card2{
+.card2 {
   font-size: 20px;
   text-align: center;
   color: #e1cccc;
   font-weight: 600;
 }
-.bgWhite{
+.bgWhite {
   background-color: #fff;
 }
-.storyTitle{
+.storyTitle {
   font-size: 20px;
-    font-weight: 500;
-    color: #4d1515;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  font-weight: 500;
+  color: #4d1515;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
-.storyPreview{
+.storyPreview {
   line-height: 1.4em;
   width: 100%;
   display: -webkit-box;
@@ -75,14 +75,22 @@
   margin-top: 5px;
   color: #935c5c;
 }
-.index{
+.index {
   font-size: 25px;
   font-weight: 500;
   color: #4d1515;
 }
-.arrowIcon{
+.arrowIcon {
   font-size: 45px;
   position: absolute;
   right: 0;
   color: #4d1515;
+}
+
+.story-card {
+  background-image: linear-gradient(to right, #fff 58%, transparent 80%),
+    url(../../../assets/icon/2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%, cover;
+  background-position: center;
 }
